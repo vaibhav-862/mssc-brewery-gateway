@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class LocalHostRouteConfig {
 
+    //look at AntPathMatcher javadoc to understand below path regexp
     @Bean
     public RouteLocator localHostRoute(RouteLocatorBuilder builder) {
         return builder.routes()
